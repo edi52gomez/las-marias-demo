@@ -419,6 +419,11 @@ body.menu-open {
   filter: brightness(0.72) saturate(0.85);
   pointer-events: none;
   display: block;
+  background-color: var(--color-green);
+}
+
+.hero__video.is-playing {
+  opacity: 1;
 }
 
 .hero__overlay {

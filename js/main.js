@@ -42,27 +42,46 @@
   window.addEventListener('scroll', handleScroll, { passive: true });
   handleScroll();
 
-  /* Hero video — autoplay en todos los navegadores */
+  /* Hero video — autoplay desde el inicio */
   const heroVideo = document.querySelector('.hero__video');
   if (heroVideo) {
     heroVideo.muted = true;
     heroVideo.defaultMuted = true;
     heroVideo.setAttribute('muted', '');
 
-    const playHeroVideo = () => {
-      const promise = heroVideo.play();
-      if (promise !== undefined) {
-        promise.catch(() => {});
+    let heroStarted = false;
+
+    const playHeroVideo = (fromStart = false) => {
+      heroVideo.muted = true;
+      if (fromStart) heroVideo.currentTime = 0;
+
+      if (heroVideo.paused || fromStart) {
+        heroVideo.play()
+          .then(() => {
+            heroVideo.classList.add('is-playing');
+            heroStarted = true;
+          })
+          .catch(() => {});
       }
     };
 
-    playHeroVideo();
-    heroVideo.addEventListener('loadeddata', playHeroVideo, { once: true });
-    heroVideo.addEventListener('canplay', playHeroVideo, { once: true });
+    heroVideo.addEventListener('playing', () => {
+      heroVideo.classList.add('is-playing');
+      heroStarted = true;
+    });
+
+    heroVideo.addEventListener('loadedmetadata', () => playHeroVideo(true), { once: true });
+    heroVideo.addEventListener('canplay', () => playHeroVideo(false), { once: true });
+
+    playHeroVideo(true);
 
     document.addEventListener('visibilitychange', () => {
-      if (!document.hidden) playHeroVideo();
+      if (!document.hidden && heroStarted) playHeroVideo(false);
     });
+
+    const unlockHero = () => playHeroVideo(true);
+    document.addEventListener('click', unlockHero, { once: true, passive: true });
+    document.addEventListener('touchstart', unlockHero, { once: true, passive: true });
   }
 
   /* Menú lateral */
