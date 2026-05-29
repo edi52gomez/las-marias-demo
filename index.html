@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Las Marías Construcciones S.A. — Desarrollo inmobiliario y construcción en Rivadavia, San Juan. Proyecto Aspen VIII: departamentos y locales comerciales con financiación.">
+  <title>Las Marías Construcciones S.A.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="Las Marías Construcciones S.A.">
+        <img src="assets/images/logo-color.png" alt="Las Marías Construcciones S.A." class="logo__img">
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menú lateral -->
+  <div class="menu-overlay" id="menuOverlay" aria-hidden="true"></div>
+  <aside class="menu-panel" id="menuPanel" aria-label="Menú de navegación" aria-hidden="true">
+    <button type="button" class="menu-panel__close" id="menuClose" aria-label="Cerrar menú">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+    <nav class="menu-panel__nav">
+      <ul class="menu-panel__list">
+        <li><a href="#nosotros" class="menu-panel__link">Nosotros</a></li>
+        <li><a href="#proyectos" class="menu-panel__link">Proyectos</a></li>
+        <li><a href="#novedades" class="menu-panel__link">Novedades</a></li>
+        <li><a href="#servicios" class="menu-panel__link">Servicios</a></li>
+        <li><a href="#contacto" class="menu-panel__link menu-panel__link--accent">Contacto</a></li>
+      </ul>
+    </nav>
+    <p class="menu-panel__brand">Las Marías Construcciones S.A.</p>
+  </aside>
+
+  <!-- Hero -->
+  <section class="hero" id="inicio">
+    <div class="hero__media">
+      <video
+        class="hero__video"
+        src="assets/videos/hero-aspen-mobile.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        poster="assets/images/hero-poster.jpg"
+        aria-hidden="true"
+      ></video>
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="container hero__content">
+      <span class="hero__line reveal"></span>
+      <h1 class="hero__title reveal">Construimos espacios<br>que trascienden</h1>
+      <p class="hero__subtitle reveal">
+        Desarrollo inmobiliario y construcción con calidad, compromiso y visión de largo plazo.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+        <a href="#contacto" class="btn btn--outline">Contactar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats inmediatos -->
+  <section class="hero-stats" aria-label="Cifras destacadas">
+    <div class="container hero-stats__grid">
+      <div class="hero-stats__item reveal">
+        <span class="hero-stats__number"><span data-target="10">0</span><span>+</span></span>
+        <span class="hero-stats__label">Años de experiencia</span>
+      </div>
+      <div class="hero-stats__item reveal">
+        <span class="hero-stats__number"><span data-target="120">0</span><span>+</span></span>
+        <span class="hero-stats__label">Obras realizadas</span>
+      </div>
+      <div class="hero-stats__item reveal">
+        <span class="hero-stats__number"><span data-target="17">0</span><span>+</span></span>
+        <span class="hero-stats__label">Proyectos residenciales y comerciales</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promo Aspen VIII -->
+  <section class="promo brand-section">
+    <span class="brand-isotipo brand-isotipo--promo" aria-hidden="true"></span>
+    <div class="container promo__inner reveal">
+      <div class="promo__text">
+        <span class="promo__label">Nuevo Aspen VIII</span>
+        <h2 class="promo__title">Invertí en nuestros locales<br>con hasta <em>40 cuotas fijas</em></h2>
+        <p class="promo__desc">6 locales comerciales desde 31 m² · Financiación a medida en pesos o dólares</p>
+      </div>
+      <a href="#contacto" class="btn btn--primary">Consultar disponibilidad</a>
+    </div>
+  </section>
+
+  <div class="brand-bridge" aria-hidden="true">
+    <img src="assets/images/isotipo.png" alt="" class="brand-bridge__isotipo">
+    <span class="brand-bridge__text typewriter" data-typewriter="Las Marías"></span>
+  </div>
+
+  <!-- Sobre nosotros -->
+  <section class="section about brand-section" id="nosotros">
+    <span class="brand-watermark" aria-hidden="true">LAS MARÍAS</span>
+    <span class="brand-isotipo brand-isotipo--about" aria-hidden="true"></span>
+    <div class="container">
+      <div class="about__brand reveal">
+        <img src="assets/images/logo-color.png" alt="Las Marías Construcciones S.A." class="about__logo">
+        <p class="about__brand-line typewriter" data-typewriter="Construcciones S.A."></p>
+      </div>
+      <div class="about__grid">
+        <div class="about__text">
+          <span class="section-label reveal">Sobre nosotros</span>
+          <h2 class="section-title reveal">Excelencia constructiva con visión de largo plazo</h2>
+          <p class="about__lead reveal">
+            Las Marías Construcciones S.A. es una desarrolladora inmobiliaria con base en Rivadavia, San Juan. Desde la planificación hasta la entrega, cada proyecto refleja nuestro compromiso con la calidad, la transparencia y el trato cercano con cada cliente.
+          </p>
+          <p class="about__body reveal">
+            Con la línea Aspen —referente en la zona— desarrollamos emprendimientos residenciales y comerciales con terminaciones premium: porcelanato pulido, molduras, cañerías termofusión, portero eléctrico y portón automático, entre otros.
+          </p>
+        </div>
+        <div class="about__image reveal">
+          <img
+            src="assets/images/aspen-planos.png"
+            alt="Planos arquitectónicos del proyecto Aspen VIII"
+            loading="lazy"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyecto destacado: Aspen VIII -->
+  <section class="section spotlight" id="aspen-viii">
+    <div class="container">
+      <div class="spotlight__grid">
+        <div class="spotlight__gallery reveal">
+          <div class="spotlight__main">
+            <img src="assets/images/obra-aspen-viii.png" alt="Obra en construcción — Aspen VIII" loading="lazy">
+          </div>
+          <div class="spotlight__secondary">
+            <img src="assets/images/aspen-fachada.png" alt="Fachada del complejo Aspen" loading="lazy">
+            <img src="assets/images/aspen-interior.png" alt="Interior terminado — Aspen" loading="lazy">
+          </div>
+        </div>
+        <div class="spotlight__info">
+          <span class="section-label reveal">Proyecto estrella</span>
+          <h2 class="section-title reveal">Nuevo Aspen VIII</h2>
+          <p class="spotlight__location reveal">Las Palmas 47 Norte · Loteo La Cabaña · Rivadavia, San Juan</p>
+          <ul class="spotlight__features reveal">
+            <li><strong>6</strong> locales comerciales <span>31 a 62 m²</span></li>
+            <li><strong>11</strong> departamentos <span>27,80 a 127 m²</span></li>
+            <li><strong>9</strong> cocheras en subsuelo</li>
+            <li>Monoambientes y deptos. de 1 y 2 dormitorios</li>
+            <li>Parrilla propia · Porcelanato pulido · Portón automático</li>
+          </ul>
+          <div class="spotlight__meta reveal">
+            <div class="spotlight__meta-item">
+              <span class="spotlight__meta-label">Estado</span>
+              <span class="project-card__status project-card__status--progress">En ejecución</span>
+            </div>
+            <div class="spotlight__meta-item">
+              <span class="spotlight__meta-label">Entrega estimada</span>
+              <span>Fines 2025 — Principios 2026</span>
+            </div>
+          </div>
+          <a href="https://www.instagram.com/aspen_lasmarias" target="_blank" rel="noopener" class="btn btn--primary reveal">Seguir avances en Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section class="section projects brand-section" id="proyectos">
+    <span class="brand-isotipo brand-isotipo--projects" aria-hidden="true"></span>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Proyectos destacados</span>
+        <h2 class="section-title">Obras que hablan por nosotros</h2>
+      </div>
+      <div class="projects__grid">
+
+        <article class="project-card reveal">
+          <div class="project-card__image">
+            <img src="assets/images/aspen-pasarela.png" alt="Aspen VIII — Pasarela y accesos" loading="lazy">
+          </div>
+          <div class="project-card__content">
+            <span class="project-card__status project-card__status--progress">En ejecución</span>
+            <h3 class="project-card__title">Aspen VIII</h3>
+            <p class="project-card__location">Las Palmas 47 Norte · Rivadavia</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__image">
+            <img src="assets/images/aspen-oficina.png" alt="Aspen V — Presentación del proyecto" loading="lazy">
+          </div>
+          <div class="project-card__content">
+            <span class="project-card__status project-card__status--done">Finalizado</span>
+            <h3 class="project-card__title">Aspen V</h3>
+            <p class="project-card__location">Sergio Boggian 4189 Oeste · Rivadavia</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__image">
+            <img src="assets/images/aspen-fachada.png" alt="Fachada residencial Aspen" loading="lazy">
+          </div>
+          <div class="project-card__content">
+            <span class="project-card__status project-card__status--done">Finalizado</span>
+            <h3 class="project-card__title">Complejo Residencial Aspen</h3>
+            <p class="project-card__location">Loteo La Cabaña · Rivadavia</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__image">
+            <img src="assets/images/aspen-interior.png" alt="Terminaciones interiores premium" loading="lazy">
+          </div>
+          <div class="project-card__content">
+            <span class="project-card__status project-card__status--done">Entregado</span>
+            <h3 class="project-card__title">Unidades entregadas</h3>
+            <p class="project-card__location">Línea Aspen · Rivadavia, San Juan</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="brand-bridge brand-bridge--dark" aria-hidden="true">
+    <img src="assets/images/isotipo.png" alt="" class="brand-bridge__isotipo">
+    <span class="brand-bridge__text typewriter" data-typewriter="Las Marías Construcciones"></span>
+  </div>
+
+  <!-- Novedades -->
+  <section class="section news" id="novedades">
+    <div class="container">
+      <div class="news__header reveal">
+        <div class="news__intro">
+          <span class="section-label">Novedades</span>
+          <h2 class="section-title">Últimas novedades</h2>
+          <p class="news__lead">
+            Avances de obra, lanzamientos y novedades del proyecto Aspen en video.
+          </p>
+        </div>
+      </div>
+
+      <div class="news__grid">
+        <article class="news-card reveal">
+          <div class="news-card__player">
+            <video
+              class="news-card__video"
+              poster="assets/images/novedad-1.jpg"
+              preload="metadata"
+              playsinline
+              src="assets/videos/novedades/novedad-1.mp4"
+            ></video>
+            <button type="button" class="news-card__play" aria-label="Reproducir video">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+          </div>
+          <div class="news-card__body">
+            <span class="news-card__tag">Obra en marcha</span>
+            <h3 class="news-card__title">Avance de construcción Aspen VIII</h3>
+            <p class="news-card__desc">Recorrido por el estado actual de obra del nuevo emprendimiento en Rivadavia, San Juan.</p>
+          </div>
+        </article>
+
+        <article class="news-card reveal">
+          <div class="news-card__player">
+            <video
+              class="news-card__video"
+              poster="assets/images/novedad-2.jpg"
+              preload="metadata"
+              playsinline
+              src="assets/videos/novedades/novedad-2.mp4"
+            ></video>
+            <button type="button" class="news-card__play" aria-label="Reproducir video">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+          </div>
+          <div class="news-card__body">
+            <span class="news-card__tag">Arquitectura</span>
+            <h3 class="news-card__title">Diseño y terminaciones Aspen</h3>
+            <p class="news-card__desc">Detalles de fachada, materiales y calidad constructiva que distinguen a la línea Aspen.</p>
+          </div>
+        </article>
+
+        <article class="news-card reveal">
+          <div class="news-card__player">
+            <video
+              class="news-card__video"
+              poster="assets/images/novedad-3.jpg"
+              preload="metadata"
+              playsinline
+              src="assets/videos/novedades/novedad-3.mp4"
+            ></video>
+            <button type="button" class="news-card__play" aria-label="Reproducir video">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+          </div>
+          <div class="news-card__body">
+            <span class="news-card__tag">Proyecto</span>
+            <h3 class="news-card__title">Nuevo Aspen VIII — Lanzamiento</h3>
+            <p class="news-card__desc">Conocé el emprendimiento: departamentos, locales comerciales y financiación a medida.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section class="section services brand-section" id="servicios">
+    <span class="brand-watermark brand-watermark--light" aria-hidden="true">LAS MARÍAS</span>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Servicios</span>
+        <h2 class="section-title">Soluciones integrales para cada proyecto</h2>
+      </div>
+      <div class="services__grid">
+
+        <article class="service-card reveal">
+          <span class="service-card__number">01</span>
+          <h3 class="service-card__title">Construcción de viviendas</h3>
+          <p class="service-card__text">Departamentos y viviendas con terminaciones premium: porcelanato pulido, molduras, parrilla propia y acabados de primera calidad.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="service-card__number">02</span>
+          <h3 class="service-card__title">Desarrollo inmobiliario</h3>
+          <p class="service-card__text">Emprendimientos completos en pozo con financiación a medida. Entrega inicial del 25% y cuotas en pesos o dólares.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="service-card__number">03</span>
+          <h3 class="service-card__title">Locales comerciales</h3>
+          <p class="service-card__text">Espacios comerciales desde 31 m² con financiación de hasta 40 cuotas fijas. Ideal para inversión en zona de alto crecimiento.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="service-card__number">04</span>
+          <h3 class="service-card__title">Dirección de obra</h3>
+          <p class="service-card__text">Supervisión técnica, control de calidad y gestión de plazos y costos en cada etapa del proyecto constructivo.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="section contact" id="contacto">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__info">
+          <span class="section-label reveal">Contacto</span>
+          <h2 class="section-title reveal">Hablemos de su próximo proyecto</h2>
+          <p class="contact__lead reveal">
+            Consultá por departamentos, locales comerciales o financiación del Aspen VIII. Un asesor comercial se pondrá en contacto a la brevedad.
+          </p>
+
+          <ul class="contact__details reveal">
+            <li>
+              <span class="contact__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </span>
+              <div>
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/5492644123456" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+              </div>
+            </li>
+            <li>
+              <span class="contact__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </span>
+              <div>
+                <strong>Web</strong>
+                <a href="https://www.lasmariasconstrucciones.com" target="_blank" rel="noopener">lasmariasconstrucciones.com</a>
+              </div>
+            </li>
+            <li>
+              <span class="contact__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+              </span>
+              <div>
+                <strong>Instagram</strong>
+                <a href="https://www.instagram.com/aspen_lasmarias" target="_blank" rel="noopener">@aspen_lasmarias</a>
+              </div>
+            </li>
+            <li>
+              <span class="contact__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <div>
+                <strong>Ubicación</strong>
+                <span>Las Palmas 47 Norte, Loteo La Cabaña<br>Rivadavia, San Juan</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact__form reveal" id="contactForm">
+          <div class="form-group">
+            <label for="name">Nombre completo</label>
+            <input type="text" id="name" name="name" required placeholder="Su nombre">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="su@email.com">
+          </div>
+          <div class="form-group">
+            <label for="phone">Teléfono</label>
+            <input type="tel" id="phone" name="phone" placeholder="+54 9 ...">
+          </div>
+          <div class="form-group">
+            <label for="interest">Interés</label>
+            <select id="interest" name="interest">
+              <option value="">Seleccionar...</option>
+              <option value="depto">Departamento — Aspen VIII</option>
+              <option value="local">Local comercial — Aspen VIII</option>
+              <option value="inversion">Inversión / Financiación</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Cuéntenos sobre su consulta..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Enviar consulta</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="logo" aria-label="Las Marías Construcciones S.A.">
+          <img src="assets/images/logo-color.png" alt="Las Marías Construcciones S.A." class="logo__img">
+        </a>
+        <p class="footer__copy">&copy; 2026 Las Marías Construcciones S.A. · Rivadavia, San Juan</p>
+      </div>
+      <nav class="footer__nav">
+        <a href="#nosotros">Nosotros</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#novedades">Novedades</a>
+        <a href="#servicios">Servicios</a>
+        <a href="https://www.instagram.com/aspen_lasmarias" target="_blank" rel="noopener">Instagram</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
